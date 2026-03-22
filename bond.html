@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>债券基金知识小站｜学生理财入门</title>
+    <style>
+        body {
+            font-family: "Microsoft YaHei", sans-serif;
+            background: #fff;
+            color: #333;
+            line-height: 1.7;
+            margin: 0;
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        h1 {
+            color: #c0392b;
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 19px;
+            margin-top: 30px;
+            border-left: 4px solid #2980b9;
+            padding-left: 10px;
+        }
+        .box {
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 8px;
+            margin: 10px 0;
+        }
+        .highlight {
+            color: #c0392b;
+            font-weight: bold;
+        }
+        button {
+            background: #2980b9;
+            color: white;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 8px 0;
+            font-size: 14px;
+        }
+        .answer {
+            display: none;
+            background: #e8f4fd;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 12px 0;
+        }
+        td, th {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background: #f1f1f1;
+        }
+        .tip {
+            background: #fff9c4;
+            padding: 10px;
+            border-left: 4px solid #fbc02d;
+            border-radius: 6px;
+            margin: 12px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #777;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>债券基金知识小站｜学生理财入门</h1>
+    <div class="box">适合：生活费、零花钱、兼职收入稳健打理｜低风险、易看懂</div>
+
+    <h2>📌 一、债券基金是什么？</h2>
+    <div class="box">
+        债券基金 = 基金公司帮大家把钱集中起来，<span class="highlight">主要投资国债、金融债、企业债</span>。
+        <br>✔ 风险比股票低很多
+        <br>✔ 波动小、比较稳
+        <br>✔ 1元起投，学生友好
+    </div>
+
+    <h2>📊 二、债基适合谁？</h2>
+    <div class="box">
+        ✅ 想让零花钱/生活费增值
+        <br>✅ 不想冒风险
+        <br>✅ 不想盯盘
+        <br>✅ 第一次理财的同学
+    </div>
+
+    <h2>🧾 三、债券基金常见类型（最简单版）</h2>
+    <table>
+        <tr>
+            <th>类型</th>
+            <th>风险</th>
+            <th>适合</th>
+        </tr>
+        <tr>
+            <td>短债基金</td>
+            <td>很低</td>
+            <td>1–6个月闲钱</td>
+        </tr>
+        <tr>
+            <td>纯债基金</td>
+            <td>低</td>
+            <td>6–12个月闲钱</td>
+        </tr>
+        <tr>
+            <td>中长债基</td>
+            <td>中低</td>
+            <td>1年以上</td>
+        </tr>
+        <tr>
+            <td>固收+</td>
+            <td>中低</td>
+            <td>想收益更高一点</td>
+        </tr>
+    </table>
+
+    <h2>✅ 四、学生怎么选债基？（3步）</h2>
+    <div class="box">
+        1. 优先选：<span class="highlight">短债 / 纯债</span>（最稳）
+        <br>2. 选 <span class="highlight">费率低</span> 的（省钱很重要）
+        <br>3. 不要追短期高收益
+    </div>
+
+    <h2>⚠️ 五、学生最容易踩的坑</h2>
+    <div class="box">
+        ❌ 把全部生活费都投进去
+        <br>❌ 跌一点就慌着卖出
+        <br>❌ 频繁买卖被扣手续费
+        <br>❌ 只看收益率不看风险
+    </div>
+
+    <h2>🧪 小测验｜看看你学会没</h2>
+    <button onclick="toggleAns(1)">第1题：债基风险比股票高吗？</button>
+    <div id="a1" class="answer">答案：更低！债基属于稳健型理财。</div>
+
+    <button onclick="toggleAns(2)">第2题：学生最适合哪种债基？</button>
+    <div id="a2" class="answer">答案：短债基金 或 纯债基金。</div>
+
+    <button onclick="toggleAns(3)">第3题：债基保本吗？</button>
+    <div id="a3" class="answer">答案：不保本，但稳健型债基风险很低。</div>
+
+    <div class="tip">本页面仅为知识科普，不构成投资建议。理财有风险，投资需谨慎。</div>
+    <div class="footer">债券基金知识平台 · 学生简易版</div>
+
+    <script>
+        function toggleAns(id) {
+            var ans = document.getElementById("a" + id);
+            ans.style.display = ans.style.display === "block" ? "none" : "block";
+        }
+    </script>
+</body>
+</html>
